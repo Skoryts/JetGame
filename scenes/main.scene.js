@@ -1,0 +1,1 @@
+let mainScene = new Scene();
