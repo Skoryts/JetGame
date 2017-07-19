@@ -5,6 +5,16 @@
 	<title>JetGame</title>
 </head>
 <body>
-	
+	<canvas id="Jet"></div>
+  <script src="./class/jet.class.js"></script>
+  <script src="./class/camera.class.js"></script>
+  <script src="./class/scene.class.js"></script>
+  <script src="./scenes/main.scene.js"></script>
+  <script>
+    let Game = new Jet("Jet", 500, 300);
+    Game.scenes.set("Main", mainScene);
+    Game.loadScene("Main");
+    Game.start();
+  </script>
 </body>
 </html>
