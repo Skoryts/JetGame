@@ -6,7 +6,7 @@ class App{
     this.main();
   }
   main(){
-    const Game = new Jet("Jet", 500, 300);
+    const Game = new Jet("Jet", 600, 350);
     Game.loadScene(MainScene);
   }
 }
