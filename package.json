@@ -1,0 +1,30 @@
+{
+  "name": "jetgame",
+  "version": "0.0.1",
+  "description": "JetGame is a simple game engine",
+  "main": "index.html",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Skoryts/JetGame.git"
+  },
+  "keywords": [
+    "canvas",
+    "html5",
+    "games"
+  ],
+  "author": "Skoryts",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/Skoryts/JetGame/issues"
+  },
+  "homepage": "https://github.com/Skoryts/JetGame#readme",
+  "devDependencies": {
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "babel-preset-env": "^1.6.0",
+    "webpack": "^3.3.0"
+  }
+}
