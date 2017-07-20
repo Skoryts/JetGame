@@ -1,11 +1,11 @@
 import Scene from "../../jet/scene.class";
 
 export default class MainScene extends Scene {
-  constructor(){
-    super();
+  start(){
+
   }
 
   update(){
-    console.log("Main Scene");
+    
   }
 }

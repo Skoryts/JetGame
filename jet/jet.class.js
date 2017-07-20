@@ -7,10 +7,10 @@ export default class Jet {
     this.canvas.height = y;
     this.ctx = this.canvas.getContext("2d");
     this.camera = new Camera();
-    this.scenes = new Map();
   }
 
   start(){
+    this.currentScene.start();
     this.loop = setInterval(() => this.update(), 20);
   }
 
@@ -22,8 +22,8 @@ export default class Jet {
     this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
   }
 
-  loadScene(name){
-    let Scene = this.scenes.get(name);
-    this.currentScene = new Scene();
+  loadScene(scene){
+    this.currentScene = new scene();
+    this.start();
   }
 }

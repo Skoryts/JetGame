@@ -1,10 +1,14 @@
 export default class Scene {
   constructor(){
-    console.log("Scene inited")
+
+  }
+
+  start(){
+
   }
 
   //go through all objects and force update()
   update(){
-    console.log("Base Scene Class");
+
   }
 }

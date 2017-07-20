@@ -7,9 +7,7 @@ class App{
   }
   main(){
     const Game = new Jet("Jet", 500, 300);
-    Game.scenes.set("Main", MainScene);
-    Game.loadScene("Main");
-    Game.start();
+    Game.loadScene(MainScene);
   }
 }
 
