@@ -1,4 +1,4 @@
-class Camera{
+export default class Camera{
   constructor(){
 
   }

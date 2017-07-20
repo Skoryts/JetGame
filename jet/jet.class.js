@@ -1,4 +1,6 @@
-class Jet {
+import Camera from "../jet/camera.class";
+
+export default class Jet {
   constructor(elem, x, y){
     this.canvas = document.getElementById(elem);
     this.canvas.width = x;
@@ -21,6 +23,7 @@ class Jet {
   }
 
   loadScene(name){
-    this.currentScene = this.scenes.get(name);
+    let Scene = this.scenes.get(name);
+    this.currentScene = new Scene();
   }
 }
