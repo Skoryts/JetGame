@@ -4,7 +4,7 @@
   "description": "JetGame is a simple game engine",
   "main": "index.html",
   "scripts": {
-    "test": "test"
+    "start": "webpack --progress --colors --watch"
   },
   "repository": {
     "type": "git",

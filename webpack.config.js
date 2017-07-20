@@ -1,7 +1,5 @@
 module.exports = {
-  entry: {
-    b: "./app/main"
-  },
+  entry: "./app/app",
 
   output: {
     filename: "./dist/app.js"
