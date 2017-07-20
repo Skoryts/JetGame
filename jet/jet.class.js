@@ -15,6 +15,7 @@ export default class Jet {
   }
 
   update(){
+    this.clear();
     this.currentScene.update();
   }
 
@@ -23,7 +24,7 @@ export default class Jet {
   }
 
   loadScene(scene){
-    this.currentScene = new scene();
+    this.currentScene = new scene(this.ctx);
     this.start();
   }
 }

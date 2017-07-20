@@ -1,6 +1,6 @@
 export default class Scene {
-  constructor(){
-
+  constructor(ctx){
+    this.ctx = ctx;
   }
 
   start(){
