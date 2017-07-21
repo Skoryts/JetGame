@@ -6,7 +6,7 @@ export default class Jet {
     this.canvas.width = x;
     this.canvas.height = y;
     this.ctx = this.canvas.getContext("2d");
-    this.camera = new Camera();
+    this.camera = new Camera(this.ctx);
   }
 
   start(){
@@ -17,6 +17,7 @@ export default class Jet {
   update(){
     this.clear();
     this.currentScene.update();
+    this.camera.render(this.currentScene.objects);
   }
 
   clear(){
@@ -24,7 +25,7 @@ export default class Jet {
   }
 
   loadScene(scene){
-    this.currentScene = new scene(this.ctx);
+    this.currentScene = new scene();
     this.start();
   }
 }
